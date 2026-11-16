@@ -1,0 +1,83 @@
+DONATELLO — PRÉVIA PARA APRESENTAÇÃO
+Preparado para publicação no Coolify por Veltrix.
+
+COMO SUBIR
+1. Extraia o ZIP no computador.
+2. Envie os arquivos extraídos para a raiz de um repositório do GitHub.
+   Na primeira tela do repositório devem aparecer Dockerfile, nginx.conf
+   e a pasta dist. Não envie apenas o ZIP ou uma pasta extra envolvendo tudo.
+3. No Coolify, crie uma nova aplicação conectada a esse repositório.
+4. Selecione o Build Pack / Build strategy: Dockerfile.
+5. Use as configurações abaixo e clique em Deploy.
+
+CONFIGURAÇÕES
+- Base Directory: /
+- Dockerfile Location: /Dockerfile
+- Ports Exposes: 80
+- Build command: deixe em branco.
+- Start command: deixe em branco.
+- Environment Variables: nenhuma variável necessária.
+- Persistent Storage: não é necessário nesta prévia.
+- Healthcheck, caso configure pela interface: GET /health na porta 80.
+- Domain: use o domínio/URL da aplicação gerado ou configurado no Coolify.
+
+Depois do deploy, abra a URL da aplicação. O site não exige login do ChatGPT.
+O HTTPS é configurado pelo proxy do Coolify, não pelo servidor interno.
+
+COMO MOSTRAR À CLIENTE
+1. Abra "Quero meio a meio".
+2. Escolha tamanho, dois sabores e borda.
+3. Adicione ao pedido e teste entrega ou retirada.
+4. Clique em "Simular pedido".
+5. Clique em "Ver no painel" e mova o pedido para a próxima etapa.
+O painel também fica no rodapé em "Conhecer painel da pizzaria".
+
+O QUE ESTÁ PRONTO NESTE PACOTE
+- Visual para celular e computador; imagens e fontes incluídas.
+- Cardápio com busca e categorias.
+- Pizza inteira ou meio a meio, tamanho, borda e observações.
+- Carrinho, taxa de entrega de exemplo, retirada e cálculo de troco.
+- Simulação de pedido e painel com etapas de preparo.
+- Alteração local de preços e disponibilidade de produtos.
+
+FUNCIONAMENTO DA DEMONSTRAÇÃO
+Os pedidos, o carrinho e as edições ficam no navegador usado no teste.
+No mesmo domínio e navegador, os dados são mantidos após um novo deploy.
+Limpar os dados do navegador ou usar outro domínio/navegador muda esse histórico.
+Não há sincronização de pedidos entre aparelhos. O painel não possui senha,
+porque exibe somente a simulação local de cada navegador.
+
+Use dados fictícios. Nenhum pedido é enviado à pizzaria, nenhum pagamento
+é cobrado e não existe integração real com WhatsApp ou banco de dados.
+
+ANTES DE RECEBER PEDIDOS REAIS
+É preciso implementar o backend com banco persistente, acesso administrativo,
+envio e recebimento real dos pedidos, horários, taxas por bairro e backups.
+Pagamentos online, impressão e automação de WhatsApp dependem do escopo final.
+
+CARDÁPIO E IMAGENS
+Conteúdo baseado no cardápio de referência consultado em 16/11/2026:
+https://www.buscardapio.com.br/Divino/pizzaria-donatello
+Os sabores usam a tabela de tamanhos observada para Calabresa e Meio a Meio:
+Pequena R$ 55, Média R$ 78, Grande R$ 88 e Família R$ 100.
+Confirmar preços, exceções, regras e disponibilidade com a pizzaria.
+A taxa demonstrativa de R$ 3 não representa uma tabela validada por bairro.
+No meio a meio, esta prévia usa o maior preço dos sabores; validar a regra.
+A foto principal é ilustrativa. As miniaturas são referências do cardápio.
+O arquivo ASSETS.md registra as origens das imagens.
+
+TESTE LOCAL COM DOCKER (OPCIONAL)
+Na pasta que contém o Dockerfile:
+docker build -t donatello-demo .
+docker run --rm -p 8080:80 donatello-demo
+Abra http://localhost:8080
+
+VERIFICAÇÃO
+O fluxo da prévia foi verificado no navegador: montagem, cálculos, carrinho,
+entrega/retirada, troco, criação de pedido simulado e movimentação no painel.
+O pacote foi conferido quanto a sintaxe JS, referências locais e integridade ZIP.
+Este ambiente de preparação não tem Docker instalado; o build da imagem
+será executado no Coolify.
+
+Referência das configurações de implantação:
+https://coolify.io/docs/applications/builds/dockerfile
