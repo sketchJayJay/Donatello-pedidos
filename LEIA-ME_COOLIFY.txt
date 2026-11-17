@@ -1,4 +1,4 @@
-DONATELLO — PRÉVIA PARA APRESENTAÇÃO
+DONATELLO — PRÉVIA PARA APRESENTAÇÃO · VERSÃO 2
 Preparado para publicação no Coolify por Veltrix.
 
 COMO SUBIR
@@ -31,6 +31,13 @@ COMO MOSTRAR À CLIENTE
 4. Clique em "Simular pedido".
 5. Clique em "Ver no painel" e mova o pedido para a próxima etapa.
 O painel também fica no rodapé em "Conhecer painel da pizzaria".
+
+NOVIDADES DA VERSÃO 2
+- Visual com abertura mais marcante e fotos grandes.
+- Favoritos, ordenação por preço/nome e cardápio expansível.
+- Carrinho lateral no computador e navegação fixa no celular.
+- Busca de sabores na montagem e prévia visual da combinação.
+- Sugestão de refrigerante no carrinho com valor explícito.
 
 O QUE ESTÁ PRONTO NESTE PACOTE
 - Visual para celular e computador; imagens e fontes incluídas.

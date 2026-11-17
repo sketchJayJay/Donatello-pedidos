@@ -1,40 +1,43 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f5ee">
-  <meta name="description" content="Uma nova experiência de pedidos para a Donatello. Demonstração comercial por Veltrix, sem pedidos reais.">
-  <title>Donatello · Seu próximo pedaço de felicidade</title>
-  <link rel="icon" href="assets/logo.jpg"><link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f4ed"><meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Uma nova experiência Donatello: escolha, combine e aproveite. Demonstração comercial Veltrix.">
+<title>Donatello · Toda fome tem um final feliz.</title>
+<link rel="icon" href="assets/logo.jpg"><link rel="stylesheet" href="design.css">
 </head>
-<body>
-  <div class="demo-strip"><span>UMA NOVA EXPERIÊNCIA DONATELLO</span><span>Prévia por <b>VELTRIX</b> <i></i> Pedidos simulados</span></div>
-  <header class="header"><div class="header-inner">
-    <a href="#" class="brand" aria-label="Donatello, início"><img src="assets/logo.jpg" alt="Logo da Pizzaria Donatello" width="62" height="62"><span><b>Donatello<span class="brand-dot">.</span></b><small>PIZZARIA · DIVINO, MG</small></span></a>
-    <nav aria-label="Navegação principal"><a href="#cardapio" class="nav-menu">Cardápio</a><button data-action="builder" class="nav-builder">Monte sua pizza</button><button data-action="orders">Meus pedidos</button></nav>
-    <div class="header-actions"><button class="icon-button mobile-preview-button" data-action="mobile" aria-label="Visualizar como no celular" title="Visualizar como no celular"><svg><use href="#i-phone"/></svg></button><button data-action="cart" class="cart-button"><svg><use href="#i-bag"/></svg><span>Meu pedido</span><b id="cart-count">0</b></button></div>
-  </div></header>
-  <main id="storefront">
-    <section class="hero container">
-      <div class="hero-copy"><span class="eyebrow"><i></i> O SABOR QUE COMBINA COM DIVINO</span><h1>Sua noite merece<br>uma <em>Donatello.</em></h1><p>Escolha seu sabor favorito, capriche na borda<br class="desktop-br"> e deixe o resto com a gente.</p><div class="hero-actions"><a class="primary" href="#cardapio">Explorar cardápio <svg><use href="#i-arrow"/></svg></a><button class="text-button" data-action="builder">Quero meio a meio <svg><use href="#i-pizza"/></svg></button></div><div class="hero-foot"><span><svg><use href="#i-clock"/></svg> Ter a dom · 18h às 22h</span><button data-action="info">Sobre a pizzaria <svg><use href="#i-arrow"/></svg></button></div></div>
-      <div class="hero-photo"><img src="assets/hero.webp" alt="Imagem ilustrativa de pizza com calabresa, bacon e queijo" fetchpriority="high"><div class="photo-grain"></div><span class="photo-caption">BOM MESMO É COMPARTILHAR.</span><div class="hero-stamp"><svg><use href="#i-pizza"/></svg><span>DO SEU JEITO.<br><b>DO PRIMEIRO<br>AO ÚLTIMO PEDAÇO.</b></span></div><span class="illustration-label">Imagem ilustrativa</span></div>
-    </section>
-    <section class="service-bar container" aria-label="Informações para pedidos"><span><svg><use href="#i-scooter"/></svg><span><b>Entrega ou retirada</b><small>Você escolhe como receber</small></span></span><span><svg><use href="#i-pizza"/></svg><span><b>Uma pizza, dois sabores</b><small>Combine seus favoritos</small></span></span><span><svg><use href="#i-card"/></svg><span><b>Pagamento do seu jeito</b><small>Pix, cartões ou dinheiro</small></span></span><button data-action="info"><svg><use href="#i-pin"/></svg><span><b>Feito em Divino, MG</b><small>Av. Henrique Givisiez, 361</small></span><svg class="small-arrow"><use href="#i-arrow"/></svg></button></section>
-    <section id="cardapio" class="menu-section container">
-      <div class="section-head"><div><span class="eyebrow">ESCOLHA. COMBINE. APROVEITE.</span><h2>O que vai ser hoje?</h2></div><label class="search"><svg><use href="#i-search"/></svg><input id="search" placeholder="Busque um sabor ou ingrediente" aria-label="Buscar no cardápio" type="search"><kbd>/</kbd></label></div>
-      <div class="menu-toolbar"><div id="categories" class="categories" aria-label="Categorias"></div><button class="outline-button" data-action="builder"><svg><use href="#i-pizza"/></svg> Monte sua pizza</button></div>
-      <div id="category-heading" class="category-heading"></div><div id="products" class="product-grid"></div>
-      <div class="bottom-note"><svg><use href="#i-info"/></svg><p>Cardápio de referência para apresentação. Preços e disponibilidade sujeitos à validação com a pizzaria.</p></div>
-    </section>
-    <section class="builder-banner container"><div><span class="eyebrow">CADA METADE, UMA ESCOLHA.</span><h2>Na dúvida?<br>Fique com os dois.</h2><p>Escolha o tamanho, combine dois sabores<br>e dê o toque final com uma borda recheada.</p><button class="primary" data-action="builder">Montar minha pizza <svg><use href="#i-arrow"/></svg></button></div><div class="pizza-mark"><svg viewBox="0 0 250 250" aria-hidden="true"><circle cx="125" cy="125" r="108"/><circle cx="125" cy="125" r="94"/><path d="M125 31v188M31 125h188M59 59l132 132M59 191L191 59"/><circle cx="90" cy="65" r="12"/><circle cx="67" cy="112" r="12"/><circle cx="90" cy="165" r="12"/><circle cx="161" cy="75" r="12"/><circle cx="180" cy="134" r="12"/><circle cx="148" cy="183" r="12"/></svg><span>½ + ½ = ♥</span></div><span class="banner-side">SEU SABOR. SUA COMBINAÇÃO.</span></section>
-  </main>
-  <section id="admin" class="admin container" hidden></section>
-  <footer class="container footer"><div><a href="#" class="brand footer-brand"><span><b>Donatello<span class="brand-dot">.</span></b><small>PIZZARIA · DIVINO, MG</small></span></a><p>Av. Henrique Givisiez, 361 · Divino, MG<br>Terça a domingo, das 18h às 22h.</p></div><div class="footer-right"><button class="text-button" data-action="admin"><svg><use href="#i-grid"/></svg> Conhecer painel da pizzaria</button><small>Conceito independente por <b>VELTRIX</b><br>Prévia comercial · Nenhum pedido real é enviado.</small><a href="https://www.buscardapio.com.br/Divino/pizzaria-donatello" target="_blank" rel="noopener">Consultar cardápio de referência ↗</a></div></footer>
-  <button class="mobile-cart" data-action="cart" hidden><span><svg><use href="#i-bag"/></svg><b id="mobile-cart-count">0</b> Ver meu pedido</span><strong id="mobile-cart-total"></strong></button>
-  <div class="toast" role="status" id="toast"></div>
-  <dialog id="modal"><div id="modal-content"></div></dialog>
-  <button id="exit-mobile" data-action="mobile" hidden>Sair da visualização mobile ×</button>
-  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg"><defs>
+<body><div class="site-shell">
+<div class="demo-strip"><span>DIVINO, MG <i></i> TERÇA A DOMINGO · 18H ÀS 22H</span><span>PRÉVIA VELTRIX <i></i> PEDIDOS SIMULADOS</span></div>
+<header class="header"><div class="header-inner container">
+<a href="#" class="brand" aria-label="Donatello, início"><img src="assets/logo.jpg" alt="Logotipo da Pizzaria Donatello" width="56" height="56"><span><b>Donatello<span>.</span></b><small>PIZZARIA · DIVINO, MG</small></span></a>
+<nav aria-label="Navegação principal"><a href="#cardapio">Cardápio</a><button data-action="builder">Monte sua pizza</button><button data-action="orders">Meus pedidos</button></nav>
+<div class="header-actions"><button class="icon-button mobile-preview-button" data-action="mobile" aria-label="Visualizar como no celular" title="Visualizar como no celular"><svg><use href="#i-phone"/></svg></button><button class="cart-button" data-action="cart"><svg><use href="#i-bag"/></svg><span>Meu pedido</span><b id="cart-count">0</b></button></div>
+</div></header>
+<main id="storefront">
+<section class="hero container" aria-label="Donatello, uma pizza do seu jeito">
+<img class="hero-image" src="assets/hero.webp" alt="Pizza ilustrativa com queijo, calabresa e bacon" fetchpriority="high"><div class="hero-shade"></div>
+<div class="hero-copy"><span class="eyebrow"><i></i> TEM NOITE QUE PEDE PIZZA.</span><h1>Toda fome<br>tem um<br><em>final feliz.</em></h1><p>O seu próximo pedaço favorito está aqui.<br>Escolha, combine e aproveite do seu jeito.</p><div class="hero-actions"><a class="primary" href="#cardapio">Escolher minha pizza <svg><use href="#i-arrow"/></svg></a><button class="hero-secondary" data-action="builder">Quero meio a meio <span>½ + ½</span></button></div><div class="hero-details"><span><svg><use href="#i-pizza"/></svg> 23 sabores</span><i></i><span>4 tamanhos</span><i></i><span>Entrega ou retirada</span></div></div>
+<div class="hero-stamp"><span>UM PEDIDO.</span><b>Muitas<br>possibilidades.</b><svg><use href="#i-heart"/></svg></div><div class="hero-label"><svg><use href="#i-pin"/></svg><span>DONATELLO<br><b>FEITA PARA A SUA NOITE.</b></span></div><small class="illustration-label">Foto ilustrativa</small>
+</section>
+<section class="service-bar container" aria-label="Como funciona">
+<div><svg><use href="#i-pizza"/></svg><span><b>Inteira ou meio a meio</b><small>Combine seus sabores favoritos</small></span></div>
+<div><svg><use href="#i-scooter"/></svg><span><b>Entrega ou retirada</b><small>Escolha na hora de finalizar</small></span></div>
+<div><svg><use href="#i-card"/></svg><span><b>Pix, cartões ou dinheiro</b><small>Pagamento do seu jeito</small></span></div>
+<button data-action="info"><svg><use href="#i-clock"/></svg><span><b>Terça a domingo</b><small>18h às 22h · veja informações</small></span><svg class="small-arrow"><use href="#i-arrow"/></svg></button>
+</section>
+<section class="featured-section container" id="destaques"><div class="section-head"><div><span class="eyebrow">UMA BOA NOITE COMEÇA AQUI</span><h2>Qual é a sua pedida?</h2></div><a href="#cardapio" class="text-button">Explorar todos os sabores <svg><use href="#i-arrow"/></svg></a></div><div class="featured-grid" id="featured-products"></div></section>
+<section class="menu-section container" id="cardapio"><div class="section-head"><div><span class="eyebrow">SEU PRÓXIMO FAVORITO</span><h2>O cardápio tá na mesa.</h2></div><label class="search"><svg><use href="#i-search"/></svg><input id="search" type="search" placeholder="Um sabor, um ingrediente..." aria-label="Buscar no cardápio"><kbd>/</kbd></label></div>
+<div class="menu-layout"><div class="menu-content"><div class="menu-toolbar"><div class="categories" id="categories" aria-label="Categorias"></div></div><div class="menu-controls"><div id="category-heading"></div><div class="filter-actions"><button class="favorites-filter" data-action="favorites" aria-pressed="false"><svg><use href="#i-heart"/></svg><span id="favorites-filter-label">Favoritos</span></button><label class="sort-control"><span class="sr-only">Ordenar cardápio</span><select id="sort"><option value="suggested">Sugestões da casa</option><option value="price">Menor preço</option><option value="name">Nome: A a Z</option></select></label></div></div><div class="product-grid" id="products"></div><div id="more-products"></div><div class="bottom-note"><svg><use href="#i-info"/></svg><p>Prévia para apresentação. Preços, regras e disponibilidade precisam ser confirmados com a pizzaria. Fotos ilustrativas.</p></div></div><aside class="order-sidebar" aria-label="Resumo do pedido" id="order-sidebar"></aside></div>
+</section>
+<section class="builder-banner container"><div class="banner-copy"><span class="eyebrow">SUA PIZZA, SUA COMBINAÇÃO.</span><h2>Metade de um.<br>Metade de outro.<br><em>100% do seu jeito.</em></h2><p>Escolha os sabores, capriche na borda<br>e encontre sua combinação favorita.</p><button class="primary" data-action="builder">Criar minha combinação <svg><use href="#i-arrow"/></svg></button></div><div class="banner-art"><div class="pizza-combination"><img class="combo-left" src="assets/calabresa.webp" alt="Metade de pizza de calabresa ilustrativa" loading="lazy"><img class="combo-right" src="assets/frango.webp" alt="Metade de pizza de frango ilustrativa" loading="lazy"><span>½ + ½</span></div><span class="combo-note">DUAS ESCOLHAS. UMA BOA IDEIA.</span></div></section>
+</main>
+<section id="admin" class="admin container" hidden></section>
+<footer class="footer container"><div><a href="#" class="brand footer-brand" data-action="store"><span><b>Donatello<span>.</span></b><small>PIZZARIA · DIVINO, MG</small></span></a><p>Av. Henrique Givisiez, 361 · Divino, MG<br>Terça a domingo, das 18h às 22h.</p><button class="text-button" data-action="info">Informações da pizzaria <svg><use href="#i-arrow"/></svg></button></div><div class="footer-right"><button class="outline-button" data-action="admin"><svg><use href="#i-grid"/></svg> Conhecer painel da pizzaria</button><p>Uma nova experiência por <b>VELTRIX</b><br>Prévia comercial · pedidos e pagamentos simulados.</p><a href="https://www.buscardapio.com.br/Divino/pizzaria-donatello" target="_blank" rel="noopener">Consultar cardápio de referência ↗</a></div></footer>
+<button class="mobile-cart" data-action="cart" hidden><span><b id="mobile-cart-count">0</b> Ver meu pedido <svg><use href="#i-arrow"/></svg></span><strong id="mobile-cart-total"></strong></button>
+<nav class="mobile-bottom-nav" aria-label="Navegação no celular"><a href="#cardapio" data-action="mobile-menu"><svg><use href="#i-pizza"/></svg><span>Cardápio</span></a><button data-action="mobile-favorites"><svg><use href="#i-heart"/></svg><span>Favoritos</span></button><button data-action="orders"><svg><use href="#i-clock"/></svg><span>Pedidos</span></button><button data-action="cart"><span class="nav-bag"><svg><use href="#i-bag"/></svg><b id="bottom-cart-count">0</b></span><span>Sacola</span></button></nav>
+<div class="toast" role="status" id="toast"></div><dialog id="modal"><div id="modal-content"></div></dialog><button id="exit-mobile" data-action="mobile" hidden>Sair da visualização mobile ×</button>
+<svg class="svg-defs" xmlns="http://www.w3.org/2000/svg"><defs>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
     <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Zm4 0V5a3 3 0 0 1 6 0v2"/></symbol>
     <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
@@ -51,5 +54,6 @@
     <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></symbol>
     <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20 5c-3-3-7-1-8 2-1-3-5-5-8-2-4 5 3 11 8 15 5-4 12-10 8-15Z"/></symbol>
   </defs></svg>
-  <script src="app.js"></script>
-</body></html>
+<script src="app.js"></script>
+</div></body></html>
+

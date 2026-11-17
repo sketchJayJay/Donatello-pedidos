@@ -13,3 +13,9 @@ Usados como referências visuais nesta demonstração privada, sem reivindicaç�
 `dist/assets/hero.webp` — criada com a ferramenta de geração de imagens integrada. Exibida como imagem ilustrativa no site. Não representa uma fotografia do produto real da Donatello.
 
 Prompt: Use case: product-mockup. Asset type: editorial food photograph for the right half of a premium Brazilian pizzeria ordering website. Create a photorealistic, appetizing whole Brazilian pizza with golden airy crust, bubbling mozzarella, sliced calabresa sausage, diced bacon, red onion, black olives, tomato and a few green herbs, on a dark round pizza pan over a very dark olive-charcoal rustic tabletop. 3/4 overhead angle, pizza centered with full circular crust visible, tight composition, tactile real food detail, moody warm natural side lighting, subtle steam, sophisticated restaurant campaign photography. Wide landscape 3:2 image. Warm cream, tomato red, basil green. No text, no logo, no people, no collage, no frames, no illustrations. The surrounding page supplies all text. This is explicitly an illustrative food image, not documentation of an actual restaurant product.
+
+## Fotos ilustrativas da versão 2
+
+`dist/assets/calabresa.webp`, `frango.webp` e `chocolate.webp` foram criadas com geração de imagens integrada para esta demonstração. Não são fotografias de produtos reais da pizzaria. Os créditos e rótulos do site indicam o caráter ilustrativo.
+
+Briefing comum: fotografia realista de uma pizza brasileira inteira em uma assadeira escura, sobre pedra bege, vista superior inclinada, luz lateral quente, textura natural, sem pessoas, textos ou marcas. Variações: calabresa com muçarela e cebola roxa; frango desfiado com muçarela e Catupiry; chocolate ao leite com morangos e leite condensado.

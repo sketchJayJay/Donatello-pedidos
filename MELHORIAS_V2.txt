@@ -1,0 +1,9 @@
+DONATELLO · VERSÃO 2
+
+Visual renovado, fotos maiores, favoritos, busca de sabores, carrinho lateral e navegação fixa no celular.
+
+Para atualizar no Coolify, substitua os arquivos do repositório pelos deste pacote e faça um novo deploy. As configurações continuam: Dockerfile, porta 80, sem variáveis e sem Persistent Storage nesta demonstração.
+
+Não apague os dados do navegador se quiser manter os testes anteriores. O histórico e os favoritos continuam locais e não são sincronizados entre aparelhos.
+
+Pedidos e pagamentos seguem simulados.

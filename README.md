@@ -1,4 +1,4 @@
-# Donatello — prévia para Coolify
+# Donatello — prévia para Coolify · versão 2
 
 Pronto para publicar a demonstração por Dockerfile. Não exige login no ChatGPT.
 
@@ -25,3 +25,16 @@ Dados salvos somente no navegador usado no teste. Não há banco de dados, auten
 O próximo passo para operação comercial é implementar o backend, o banco persistente, as permissões e as integrações acordadas com a pizzaria.
 
 Veja as origens das imagens em ASSETS.md e a licença da fonte em `dist/assets/fonts/OFL.txt`.
+
+## Melhorias desta versão
+
+- Abertura com foto ampla, contraste forte e identidade mais marcante.
+- Destaques com fotos ilustrativas de Donatello, Calabresa e Frango com Catupiry.
+- Favoritos salvos no navegador e filtro para consultá-los.
+- Ordenação por nome ou menor preço, com expansão do cardápio completo.
+- Carrinho lateral no computador e navegação fixa no celular.
+- Montagem de pizza com prévia visual e busca de sabores por ingrediente.
+- Sugestão opcional de refrigerante no carrinho, sem descontos ou valores inventados.
+- Fotos ilustrativas adicionais de Calabresa, Frango e Chocolate com Morango.
+
+Os dados da primeira versão são preservados se o domínio e o navegador continuarem os mesmos.
